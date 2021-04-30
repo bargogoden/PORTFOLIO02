@@ -1,0 +1,559 @@
+@charset "UTF-8";
+
+
+
+#wrap {z-index:1;position:relative;width:100%;max-width:1920px;margin:0 auto;overflow: hidden;}
+#wrap #header {z-index:3;position:fixed;top:0;left:0;width:100%;height:80px;}/* js */
+#wrap #header #logo {float:left;width:10%;}
+#wrap #header #logo .logo-gap {width:100%;}
+#wrap #header #logo .logo-gap .logo-content {z-index:1;width:100%;position:relative;}
+#wrap #header #logo .logo-gap .logo-content img {z-index:2;position:absolute;bottom:0;left:0;width:100%;}
+#wrap #header #logo .logo-gap .logo-content img:nth-child(1) {display:block;top:100px;left:100px;width:400%;}
+#wrap #header #logo .logo-gap .logo-content img:nth-child(1).addInSection {display:none;}
+#wrap #header #logo .logo-gap .logo-content img:nth-child(1).addLogoE {top:30px;left:10px;width:0;opacity:0;animation:logo 1.5s ease-in-out;}
+@keyframes logo {
+  0%   {top:100px;left:100px;width:400%;opacity:1;}
+  98%   {opacity:.4;}
+  100% {top:30px;left:10px;width:50%;opacity:.2;}
+}
+#wrap #header #logo .logo-gap .logo-content img:nth-child(1).addBye {top:100px;left:100px;width:400%;opacity:1;animation:logoB 1.5s ease-in-out;}
+@keyframes logoB {
+  0%   {top:30px;left:10px;width:50%;opacity:.2;}
+  98%   {opacity:.4;}
+  100% {top:100px;left:100px;width:400%;opacity:1;}
+}
+#wrap #header #logo .logo-gap .logo-content img:nth-child(2) {opacity:0;top:30px;left:10px;width:50%;}
+#wrap #header #logo .logo-gap .logo-content img:nth-child(2).addInSection {opacity:1;top:30px;left:10px;width:50%;}
+#wrap #header #logo .logo-gap .logo-content img:nth-child(2).addLogoE {opacity:1;animation:logo2 2s ease-in-out;}
+@keyframes logo2 {
+  0%   {opacity:0;}
+  70%  {opacity:0;}
+  70.00003%  {opacity:.4;}
+  100% {opacity:1;}
+}
+#wrap #header #logo .logo-gap .logo-content img:nth-child(2).addBye {opacity:0;animation:logoB2 1.5s ease-in-out;}
+@keyframes logoB2 {
+  0%   {opacity:1;}
+  30%  {opacity:0;}
+  100% {opacity:0;}
+}
+
+
+#wrap #header #nav {float:left;width:80%;height:100%;}
+
+#wrap #header #nav #menu {float:left;margin-left:41%;padding:40px 0 30px 0;height:100%;}
+#wrap #header #nav #menu ul {width:100%;}
+#wrap #header #nav #menu ul > li {float:left;margin:0 8px;padding:2px 5px;border:1px solid rgba(0,0,0, 0);border-radius:10px;}
+#wrap #header #nav #menu ul > li:hover {float:left;margin:0 8px;padding:2px 5px;border:1px solid #222;border-radius:10px;}
+#wrap #header #nav #menu ul > li .main-btn {display:inline-block;color:#222;font-weight:800;font-size:13px;}
+
+
+#wrap #header #switch {float:left;width:10%;height:100%;}
+
+
+/* 왜?????????????????????????????????nav는 큰 개념의 태그니깐 웬만하면 큰데다가 써 ㅠㅠㅠ 이유는 정확히 모룸 */
+
+
+
+
+#wrap #main {z-index:2;position:relative;width:100%;}
+
+
+
+
+/* SECTION1 */
+#wrap #main #section1 {width:100%;}
+#wrap #main #section1 .wrap {width:100%;max-width:1920px;margin:0 auto;overflow:hidden;}
+#wrap #main #section1 .wrap .gap {margin:0}
+#wrap #main #section1 .wrap .gap .container {width:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container {position:relative;width:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view {z-index:1;position:relative;width:100%;height:969px;overflow:hidden;} /* js */
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap {width:100%;height:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide {z-index:4;position:absolute;top:0;left:0;width:100%;height:100%;}
+
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide0 {z-index:4;}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide1 {z-index:3;}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide2 {z-index:2;}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide3 {z-index:1;}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap {margin-left:0;width:100%;height:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide.addMove .slide-gap {margin-left:0;}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap .slide-content {z-index:1;position:relative;width:100%;height:100%;background:url(../img/grand_canyon/slide0.jpg) no-repeat 50% 40%;background-size:120%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap .slide-content::after {content:"";display:block;z-index:2;position:absolute;width:100%;height:100%;top:0;left:0;background:rgba(0,0,0, .1);}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap .slide-content.addSlideEffect {animation:toTop 7s ease-in-out;}
+@keyframes toTop {
+  0% {background-position:50% 50%;}
+  100% {background-position:50% 40%;}
+}
+
+
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap .slide-content0 {background-image:url(../img/grand_canyon/slide0.jpg)}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap .slide-content1 {background-image:url(../img/grand_canyon/slide1.jpg)}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap .slide-content2 {background-image:url(../img/grand_canyon/slide2.jpg)}
+#wrap #main #section1 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap .slide-content3 {background-image:url(../img/grand_canyon/slide3.jpg)}
+
+
+
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap {z-index:3;position:absolute;bottom:40%;left:53%;width:280px;height:400px;} /* js */
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container {width:100%;height:100%;position:relative;}   /* 모든 앱솔루트의 부모영역/ position 건들이지마 */
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view {position:relative;width:100%;height:100%;overflow:hidden;}
+
+
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap{position:relative;width:100%;height:100%;}
+
+
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap .up-slide  {z-index:4;position:absolute;bottom:0;left:0;width:100%;height:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap .up-slide0  {z-index:4;}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap .up-slide1  {z-index:3;}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap .up-slide2  {z-index:2;}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap .up-slide3  {z-index:1;}
+
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap .up-slide .up-slide-gap {width:100%;height:100%;position:relative;border-radius:150px;overflow:hidden;}
+
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap .up-slide .up-slide-gap .up-slide-content {position:absolute;bottom:0;left:0;width:100%;height:100%;background:url(../img/grand_canyon/slide1.jpg)no-repeat 50% 50%;background-size:95%;border-radius:150px;}
+
+
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap .up-slide0 .up-slide-gap .up-slide-content {background:url(../img/grand_canyon/slide3.jpg)no-repeat 20% 30%;background-size:cover;bottom:0;}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap .up-slide0 .up-slide-gap .up-slide-content0 {}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap .up-slide0 .up-slide-gap .up-slide-content1 {}
+
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap .up-slide1 .up-slide-gap .up-slide-content {background:url(../img/grand_canyon/slide0.jpg)no-repeat 50% 50%;background-size:cover;}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap .up-slide1 .up-slide-gap .up-slide-content0 {}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap .up-slide1 .up-slide-gap .up-slide-content1 {}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap .up-slide2 .up-slide-gap .up-slide-content {background:url(../img/grand_canyon/slide1.jpg)no-repeat 50% 50%;background-size:cover;}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap .up-slide2 .up-slide-gap .up-slide-content0 {}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap .up-slide2 .up-slide-gap .up-slide-content1 {}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap .up-slide3 .up-slide-gap .up-slide-content {background:url(../img/grand_canyon/slide2.jpg)no-repeat 50% 40%;background-size:cover;}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap .up-slide3 .up-slide-gap .up-slide-content0{}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-slide-wrap .up-slide-container .up-slide-view .up-slide-wrap .up-slide3 .up-slide-gap .up-slide-content1{}
+
+
+
+
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-h2-wrap {z-index:3;position:absolute;bottom:35%;left:8%;width:300px;} /* js */
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-h2-wrap .up-h2-gap {width:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-h2-wrap .up-h2-gap .up-h2 {color:#fff;font-size:25px;}
+
+
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-p-wrap {z-index:3;position:absolute;bottom:5%;left:53%;width:500px;height:300px;} /* js */
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-p-wrap .up-p-gap {width:100%;height:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-p-wrap .up-p-gap .up-p-content {width:110%;height:100%;}/* 560px */
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-p-wrap .up-p-gap .up-p-content .up-p {float:left;width:45.454545%;color:#fff;font-size:15px;}/* width:250px */
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-p-wrap .up-p-gap .up-p-content .up-p {margin:0 2.27272727%;}/* margin:0 15px; */
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-p-wrap .up-p-gap .up-p-content .up-p {margin:0 2.27272727%;}/* margin:0 15px; */
+
+
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-sns-wrap {z-index:3;position:absolute;bottom:17%;left:8%;width:200px;height:80px;} /* js */
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-sns-wrap .up-sns-gap {width:100%;height:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-sns-wrap .up-sns-gap .up-sns-content {width:100%;height:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-sns-wrap .up-sns-gap .up-sns-content ul {width:100%;height:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-sns-wrap .up-sns-gap .up-sns-content ul li {float:left;width:40%;height:40%;margin:5%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-sns-wrap .up-sns-gap .up-sns-content ul li:nth-child(1) {margin:5% 5% 0 5%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-sns-wrap .up-sns-gap .up-sns-content ul li:nth-child(2) {margin:5% 5% 0 0;}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-sns-wrap .up-sns-gap .up-sns-content ul li:nth-child(3) {margin:5% 5% 5% 5%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-sns-wrap .up-sns-gap .up-sns-content ul li:nth-child(4) {margin:5% 5% 5% 0;}
+
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-sns-wrap .up-sns-gap .up-sns-content ul li span {display:inline-block;width:100%;height:100%;}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-sns-wrap .up-sns-gap .up-sns-content ul li span a {display:block;width:16%;height:40%;margin:0 auto;border:1px solid #fff;background:rgba(255,255,255,0);border-radius:50%;padding:6px;transition:all .3s ease-in-out;}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-sns-wrap .up-sns-gap .up-sns-content ul li span a:hover {background:rgba(255,255,255,.3);}
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-sns-wrap .up-sns-gap .up-sns-content ul li span a img {display:inline-block;width:95%;height:95%;margin:auto;color:#fff;transform:scale(1);transition:all .3s ease-in-out;}      
+#wrap #main #section1 .wrap .gap .container .slide-container .upper-sns-wrap .up-sns-gap .up-sns-content ul li span a:hover img {color:#fff;transform:scale(1.1);}
+
+
+
+/* SECTION2 */
+#wrap #main #section2 {width:100%;height:4000px;z-index:1;position:relative;} /* js */
+#wrap #main #section2 .wrap {width:100%;height:100%;max-width:1920px;margin:0 auto;background:linear-gradient(to top, rgba(90,30,90, .9), rgba(200, 150, 200, .6), rgba(240, 100, 0 , .5));}
+#wrap #main #section2 .wrap .gap {margin:0;height:100%;}
+#wrap #main #section2 .wrap .gap .container {width:100%;height:100%;}
+#wrap #main #section2 .wrap .gap .container .slide-container {width:100%;height:100%;}
+#wrap #main #section2 .wrap .gap .container .slide-container .slide-view {z-index:2;position:relative;width:100%;height:100%;overflow:hidden;}
+#wrap #main #section2 .wrap .gap .container .slide-container .slide-view .slide-wrap {width:100%;height:100%;}
+#wrap #main #section2 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide {z-index:1;position:absolute;top:0;left:0;width:100%;height:4000px;} /* js */
+#wrap #main #section2 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap {width:100%;height:100%;}
+#wrap #main #section2 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap .slide-bg {z-index:1;position:absolute;top:0;left:0;width:100%;height:100%;background:url(../img/grand_canyon/long2.jpg) no-repeat 0 5%;background-size:200%;transition:all .6s ease-in-out;}
+#wrap #main #section2 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap .slide-content {z-index:2;position:relative;top:0;left:0;width:100%;height:100%;background:url(../img/section2.png) no-repeat 0 0;background-size:100%;}
+
+
+#wrap #main #section2 .wrap .gap .container .slide-container .txt-wrap {opacity:0;transition:all .3s ease-in-out;z-index:3;position:fixed;bottom:40%;left:5%;width:1200px;} /* JS */
+#wrap #main #section2 .wrap .gap .container .slide-container .txt-wrap.addShow {opacity:1;}
+#wrap #main #section2 .wrap .gap .container .slide-container .txt-wrap .txt-gap {width:100%;}
+#wrap #main #section2 .wrap .gap .container .slide-container .txt-wrap .txt-gap .txt-content {width:100%;}
+#wrap #main #section2 .wrap .gap .container .slide-container .txt-wrap .txt-gap .txt-content h2 {color:#fff;font-size:80px;font-weight:500;letter-spacing:-2px;}
+
+#wrap #main #section2 .wrap .gap .container .slide-container .prof-wrap {opacity:0;z-index:3;position:fixed;bottom:10%;left:8%;width:800px;transition:all .3s ease-in-out;} /* JS */
+#wrap #main #section2 .wrap .gap .container .slide-container .prof-wrap.addShow {opacity:1;}
+#wrap #main #section2 .wrap .gap .container .slide-container .prof-wrap .prof-gap {width:100%;color:#fff;text-align:left;font-size:14px;}
+#wrap #main #section2 .wrap .gap .container .slide-container .prof-wrap .prof-gap .name {float:left;width:50%;}
+#wrap #main #section2 .wrap .gap .container .slide-container .prof-wrap .prof-gap .date {float:left;width:50%;}
+
+#wrap #main #section2 .wrap .gap .container .slide-container .quot-wrap {opacity:0;transition:all .3s ease-in-out;z-index:3;position:fixed;bottom:30%;right:0%;width:200px;} /* JS */
+#wrap #main #section2 .wrap .gap .container .slide-container .quot-wrap.addShow {opacity:1;}
+#wrap #main #section2 .wrap .gap .container .slide-container .quot-wrap .quot-gap {width:100%}
+#wrap #main #section2 .wrap .gap .container .slide-container .quot-wrap .quot-gap .quot-content {color:#fff;font-size:380px;}
+
+
+
+/* SECTION3 */   
+#wrap #main #section3 {width:100%;padding:130px 0;z-index:2;position:relative;}
+#wrap #main #section3 .wrap {width:100%;max-width:1920px;margin:0 auto;}
+#wrap #main #section3 .wrap .gap {width:100%;}
+#wrap #main #section3 .wrap .gap .container{width:100%;}
+
+#wrap #main #section3 .wrap .gap .container .gal-btn-gap {margin:5% 5%;}
+#wrap #main #section3 .wrap .gap .container .gal-btn-gap .gal-btn-wrap {width:100%;}
+#wrap #main #section3 .wrap .gap .container .gal-btn-gap .gal-btn-wrap li {float:left;margin:0 15px;}
+#wrap #main #section3 .wrap .gap .container .gal-btn-gap .gal-btn-wrap li > span {display:block;} 
+#wrap #main #section3 .wrap .gap .container .gal-btn-gap .gal-btn-wrap li > span > .gal-btn {display:block;font-weight:500;}
+
+/* 백그라운드에서 이미지로 바꾸기  , 높이 관련 js모두 빼기  */
+#wrap #main #section3 .wrap .gap .container .slide-container {margin-left:1.5%;width:98.5%;;margin-bottom:8%;} /* js */
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view {width:100%;height:100%;position:relative;}
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap {width:100%;height:100%;}
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide {position:absolute;top:0;left:0;width:33.3333%;}
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide0 {left:calc(33.33333%*0);   top:calc(33.33333%*0);}
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide1 {left:calc(33.33333%*1);   top:calc(33.33333%*0);}
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide2 {left:calc(33.33333%*2);   top:calc(33.33333%*0);}
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide3 {left:calc(33.33333%*0);   top:calc(33.33333%*1);}
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide4 {left:calc(33.33333%*1);   top:calc(33.33333%*1);}
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide5 {left:calc(33.33333%*2);   top:calc(33.33333%*1);}
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide6 {left:calc(33.33333%*0);   top:calc(33.33333%*2);}
+
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap {margin:10% 5% 10% 0;height:90%;overflow:hidden;}
+
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap .slide-content {width:100%;}
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap .slide-content img {width:100%;transform:scale(0);opacity:0;}
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap .slide-content img:nth-child(1).addGal {transform:scale(1);opacity:1;animation:gal0 2.1s ease-in-out;}
+@keyframes gal0 {
+  0% {transform:scale(0);opacity:0;}
+  14% {transform:scale(1);opacity:1;}
+  100%{transform:scale(1);opacity:1;}
+}  
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap .slide-content img:nth-child(2).addGal {transform:scale(1);opacity:1;animation:gal1 2.1s ease-in-out;}
+@keyframes gal1 {
+  0% {transform:scale(0);opacity:0;}
+  28% {transform:scale(1);opacity:1;}
+  100%{transform:scale(1);opacity:1;}
+}
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap .slide-content img:nth-child(3).addGal {transform:scale(1);opacity:1;animation:gal2 2.1s ease-in-out;}
+@keyframes gal2 {
+  0% {transform:scale(0);opacity:0;}
+  42% {transform:scale(1);opacity:1;}
+  100%{transform:scale(1);opacity:1;}
+}
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap .slide-content img:nth-child(4).addGal {transform:scale(1);opacity:1;animation:gal3 2.1s ease-in-out;}
+@keyframes gal3 {
+  0% {transform:scale(0);opacity:0;}
+  56% {transform:scale(1);opacity:1;}
+  100%{transform:scale(1);opacity:1;}
+}
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap .slide-content img:nth-child(5).addGal {transform:scale(1);opacity:1;animation:gal4 2.1s ease-in-out;}
+@keyframes gal4 {
+  0% {transform:scale(0);opacity:0;}
+  70% {transform:scale(1);opacity:1;}
+  100%{transform:scale(1);opacity:1;}
+}
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap .slide-content img:nth-child(6).addGal {transform:scale(1);opacity:1;animation:gal5 2.1s ease-in-out;}
+@keyframes gal5 {
+  0% {transform:scale(0);opacity:0;}
+  84% {transform:scale(1);opacity:1;}
+  100%{transform:scale(1);opacity:1;}
+}
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap .slide-content img:nth-child(7).addGal {transform:scale(1);opacity:1;animation:gal6 2.1s ease-in-out;}
+@keyframes gal6 {
+  0% {transform:scale(0);opacity:0;}
+  100%{transform:scale(1);opacity:1;}
+}
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide .slide-gap .slide-content  {transform:scale(1);opacity:1;transition:all .3s ease-in-out;}
+#wrap #main #section3 .wrap .gap .container .slide-container .slide-view .slide-wrap .slide:hover .slide-gap .slide-content  {transform:scale(1.1);opacity:.9;}
+
+
+
+#wrap #main #section3 .wrap .gap .container .project-wrap {width:100%;}
+#wrap #main #section3 .wrap .gap .container .project-wrap .project-gap {margin-left:50%;}
+#wrap #main #section3 .wrap .gap .container .project-wrap .project-gap span {display:block;}
+#wrap #main #section3 .wrap .gap .container .project-wrap .project-gap span a {font-size:40px;display:block;font-style:normal;color:#222;text-decoration: underline;}
+#wrap #main #section3 .wrap .gap .container .project-wrap .project-gap span a:hover {padding-left:5px;font-style: italic;color:rgba(255,100,80, .6);transition:all .3s ease-in-out;}
+#wrap #main #section3 .wrap .gap .container .project-wrap .project-gap span a i {color:#222;font-size:30px;}
+
+
+
+/* SECTION4 */
+#wrap #main #section4 {width:100%;}
+#wrap #main #section4 .wrap {width:100%;max-width:1920px;margin:0 auto;background:linear-gradient(to bottom , rgba(255, 150, 0, .7), rgba(40, 0 , 0, .8));}
+#wrap #main #section4 .wrap .gap {width:100%;}
+#wrap #main #section4 .wrap .gap .container {width:100%;height:900px;position:relative;}
+#wrap #main #section4 .wrap .gap .container .back-wrap {z-index:1;position:absolute;top:0;left:0;width:100%;}/* 스크롤이벤트시, top값 변경 */
+#wrap #main #section4 .wrap .gap .container .back-wrap .back-gap {width:100%;position:relative;}
+#wrap #main #section4 .wrap .gap .container .back-wrap .back-gap .back-content {z-index:1;position:absolute;top:0;left:0;width:100%;height:900px;background:url(../img/grand_canyon/fallon-michael-B3xeho4YEVI-unsplash\ 1920.jpg) no-repeat 50% 50%;background-size:150%;transition:all .3s ease-in-out;}
+#wrap #main #section4 .wrap .gap .container .back-wrap .back-gap .back-content::after {content:"";display:block;z-index:2;position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0, .1);}
+
+
+#wrap #main #section4 .wrap .gap .container .content-wrap {z-index:2;position:relative;width:100%;}
+#wrap #main #section4 .wrap .gap .container .content-wrap .title-wrap {width:100%;padding-top:18%;padding-left:2%;}
+#wrap #main #section4 .wrap .gap .container .content-wrap .title-wrap h2 {opacity:0;font-size:120px;font-weight:600;color:#fff;}
+#wrap #main #section4 .wrap .gap .container .content-wrap .title-wrap h2.addShow4 {padding-top:0;opacity:1;animation:show4 .9s ease-in-out;}
+@keyframes show4 {
+  0% {padding-top:20px;opacity:0;}
+  80% {padding-top:0;opacity:1;}
+  100% {padding-top:0;opacity:1;}
+
+}
+#wrap #main #section4 .wrap .gap .container .content-wrap .loca-wrap {opacity:0;color:#fff;padding-top:13%;padding-left:2%;}
+#wrap #main #section4 .wrap .gap .container .content-wrap .loca-wrap.addShow4 {padding-top:13%;opacity:1;animation:show44 .9s ease-in-out;}
+@keyframes show44 {
+  0% {padding-top:15%;opacity:0;}
+  100% {padding-top:13%;opacity:1;}
+
+}
+#wrap #main #section4 .wrap .gap .container .content-wrap .loca-wrap .latitude {float:left;margin-right:40%;font-size:14px;}
+#wrap #main #section4 .wrap .gap .container .content-wrap .loca-wrap .longitude {float:left;font-size:14px;}
+
+
+/* SECTION5 */
+
+#wrap #main #section5 {width:100%;}
+#wrap #main #section5 .wrap {z-index:1;position:relative;width:100%;max-width:1920px;margin:0 auto;background:rgba(30,10,3,.8);padding-bottom:1%;}
+#wrap #main #section5 .wrap::after {content:"";display:block;z-index:2;position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);}
+#wrap #main #section5 .wrap .gap {z-index:3;position:relative;padding:7% 0;margin:0 7%;}
+#wrap #main #section5 .wrap .gap .container {width:100%;height:900px;} /* js */
+#wrap #main #section5 .wrap .gap .container .content {width:100%;height:66.66666%;padding-bottom:10%;}
+#wrap #main #section5 .wrap .gap .container .content .left-wrap {float:left;width:40%;height:100%;}
+#wrap #main #section5 .wrap .gap .container .content .left-wrap > ul {width:100%;height:100%;}
+#wrap #main #section5 .wrap .gap .container .content .left-wrap > ul  .content-wrap {float:left;width:50%;height:100%;}
+#wrap #main #section5 .wrap .gap .container .content .left-wrap > ul  .content-wrap .content-gap {width:95%;margin:0 auto;height:30%;overflow:hidden;}
+#wrap #main #section5 .wrap .gap .container .content .left-wrap > ul  .content-wrap .content-gap .content {width:100%;height:100%;background:url(../img/grand_canyon/pic01.jpg) no-repeat 50% 50%;background-size:cover;transform:scale(1);opacity:1;transition:all .6s ease-in-out;}
+#wrap #main #section5 .wrap .gap .container .content .left-wrap > ul  .content-wrap .content-gap .content:hover {transform:scale(1.1);opacity:.8;}
+
+#wrap #main #section5 .wrap .gap .container .content .left-wrap > ul  .content-wrap .content-gap .content0 {background-image:url(../img/grand_canyon/pic01.jpg);}
+#wrap #main #section5 .wrap .gap .container .content .left-wrap > ul  .content-wrap .content-gap .content1 {background-image:url(../img/grand_canyon/pic02.jpg);}
+
+
+#wrap #main #section5 .wrap .gap .container .content .left-wrap > ul  .content-wrap .txt-wrap {width:100%;padding-top:5%;margin-left:5px;}
+#wrap #main #section5 .wrap .gap .container .content .left-wrap > ul  .content-wrap .txt-wrap .txt-gap {width:100%;}
+#wrap #main #section5 .wrap .gap .container .content .left-wrap > ul  .content-wrap .txt-wrap .txt-gap h3 {line-height:180%;color:#fff;font-size:14px;font-weight:300;}
+
+
+#wrap #main #section5 .wrap .gap .container .content .right-wrap {float:left;width:60%;height:100%;}
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap {width:90%;margin:0 0 0 10%;height:90%;position:relative;}
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section {z-index:1;position:relative;width:100%;height:100%;}
+
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .circle-btn {display:block;float:left;width:2%;height:100%;margin:60% 0 0 1%;}
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .circle-btn .btn-wrap {display:inline-block;width:100%;height:100%;}
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .circle-btn .btn-wrap .cir-btn {display:inline-block;margin:10px auto 0 auto;width:16px;height:16px;border:1px solid #fff;border-radius:50%;} 
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .circle-btn .btn-wrap .cir-btn:hover {background:rgba(255,255,255, .5);} 
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .circle-btn .btn-wrap .cir-btn.addLight {background:rgba(255,255,255, .5);} 
+
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .left-side-white {float:right;width:13%;height:100%;}
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .left-side-white .left-side-white-content {width:65%;height:100%;margin:0 auto;background:#fff;box-shadow:inset 20px 0 20px 0 rgba(0,0,0, .5);}
+
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .slide-container {float:right;width:74%;height:100%;overflow:hidden;}
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .slide-container .slide-view {width:100%;height:100%;}
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .slide-container .slide-view .slide-wrap {width:calc(659px*5);position:relative;left:0;margin-left:-659px;height:100%;}
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-container .slide-view .slide-wrap .slide {float:left;width:659px;height:100%;background:url(../img/grand_canyon/center_edited_01.jpg) no-repeat 50% 50%;background-size:cover;}/* js */
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .slide-container .slide-view .slide-wrap .slide0 {background-image:url(../img/grand_canyon/center_edited_01.jpg);}
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .slide-container .slide-view .slide-wrap .slide1 {background-image:url(../img/grand_canyon/center_edited_02.jpg);}
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .slide-container .slide-view .slide-wrap .slide2 {background-image:url(../img/grand_canyon/center_edited_03.jpg);}
+
+
+
+
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .right-side-white {float:right;width:8%;height:100%;}
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .right-side-white .right-side-white-content {width:65%;height:100%;margin:0 7.5% 0 7.5%;background:#fff;}
+
+
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .text-wrap {z-index:2;position:absolute;width:90%;top:98%;left:10%;}
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .text-wrap .left-h3 {float:left;height:100%;width:20%;padding-top:5%;}
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .text-wrap .left-h3  h3 {font-size:14px;color:#fff;font-weight:300;}
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .text-wrap .right-text {float:right;width:37%;height:100%;margin-right:14%;padding-top:5%;}
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .text-wrap .right-text .up {width:100%;}
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .text-wrap .right-text .up p {width:100%;color:#fff;font-weight:300;line-height:135%;font-size:14px;}
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .text-wrap .right-text .down {width:100%;padding-top:20px;}
+#wrap #main #section5 .wrap .gap .container .content .right-wrap .right-gap .text-wrap .right-text .down h4 {color:#fff;font-weight:300;}
+
+
+#wrap #main #section5 .wrap .gap .container .shop-btn-wrap {width:100%;height:33.33333%;padding-top:9%;}
+#wrap #main #section5 .wrap .gap .container .shop-btn-wrap .shop-btn-gap {display:block;margin-left:50%;}
+#wrap #main #section5 .wrap .gap .container .shop-btn-wrap .shop-btn-gap .shop-btn {display:block;width:100%;color:#fff;font-style:normal;font-weight:300;font-size:40px;text-decoration:underline;transition:all .3s ease-in-out;}
+#wrap #main #section5 .wrap .gap .container .shop-btn-wrap .shop-btn-gap .shop-btn:hover {padding-left:5px;font-style: italic;color:/* rgba(255,200,210, 1); */#edd;transition:all .3s ease-in-out;}
+
+
+/* SECTION6 */
+
+#wrap #main #section6 {width:100%;}
+#wrap #main #section6 .wrap {height:1270px;width:100%;max-width:1920px;margin:0 auto;background:rgba(50,20,5, .3);} /* js */
+#wrap #main #section6 .wrap .gap {width:100%;height:100%;}
+#wrap #main #section6 .wrap .gap .container {width:100%;height:100%;}
+#wrap #main #section6 .wrap .gap .container .content-wrap {width:100%;height:100%;}
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap {width:100%;color:#fff;height:100%;position:relative;}
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .left-oval-wrap {z-index:2;position:absolute;transform:perspective(1800px) rotateY(0deg) rotateX(0deg);top:0;left:0;width:980px;height:100%;} /* js */
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .left-oval-wrap .oval-view {width:70%;margin:0 auto;height:90%;margin-top:6%;overflow:hidden;border-radius:400px;}
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .left-oval-wrap .oval-view .oval-gap {z-index:2;position:relative;width:100%;height:100%;}
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .left-oval-wrap .oval-view .oval-gap .oval-back {z-index:1;position:absolute;top:-200px;left:-100px;width:200%;height:200%;background:url(../img/grand_canyon/section6-bg2.jpg) no-repeat 50% 50%;background-size:cover;transition:all .05s ease-in-out;}
+
+
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .right-text-wrap {z-index:1;position:relative;margin-left:48%;color:rgba(20,5,0,1);}
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .right-text-wrap .first {margin:0 10%;padding:22% 0 10% 0;}
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .right-text-wrap .first .first-gap {width:100%;}
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .right-text-wrap .first .first-gap h2 {opacity:0;width:100%;font-size:105px;font-stretch:ultra-expanded;}
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .right-text-wrap .first .first-gap h2.addShow6 {padding-top:0;opacity:1;animation:show6 .6s ease-in-out;}
+@keyframes show6 {
+  0% {padding-top:-10px;opacity:0;}
+  100% {padding-top:0px;opacity:1;}
+
+}
+
+
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .right-text-wrap .second {width:80%;margin:0 auto;padding-bottom:28%;}
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .right-text-wrap .second .left {float:left;width:50%;}
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .right-text-wrap .second .left .left-gap {width:75%;margin:0 20% 0 0;} 
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .right-text-wrap .second .left .left-gap p {width:100%;line-height:150%;font-weight:500;font-size:14px;}
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .right-text-wrap .second .right {float:left;width:50%;}
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .right-text-wrap .second .right .right-gap {width:75%;margin:0 35% 0 -15%;} 
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .right-text-wrap .second .right .right-gap p {width:100%;line-height:150%;font-weight:500;font-size:14px;} 
+
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .right-text-wrap .third {display:block;width:80%;margin:0 auto;}
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .right-text-wrap .third .third-gap {width:100%;}
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .right-text-wrap .third .third-gap .third-left {float:left;width:50%;}
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .right-text-wrap .third .third-gap .third-left > h5 {width:75%;margin:0 20% 0 0;font-weight:500;}
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .right-text-wrap .third .third-gap .third-right {float:left;width:50%;}
+#wrap #main #section6 .wrap .gap .container .content-wrap .content-gap .right-text-wrap .third .third-gap .third-right > h5{width:75%;margin:0 20% 0 0;font-weight:500;}
+
+
+/* SECTION7 */
+
+#wrap #main #section7 {width:100%;}
+#wrap #main #section7 .wrap {width:100%;max-width:1920px;margin:0 auto;background:rgba(20,10,5, 1);color:#fff;}
+#wrap #main #section7 .wrap .gap {margin:0;}
+#wrap #main #section7 .wrap .gap .container {width:85%;height:1000px;margin:0 auto;padding-top:7%;} /* js */
+#wrap #main #section7 .wrap .gap .container .content-wrap {width:100%;height:100%;}
+#wrap #main #section7 .wrap .gap .container .content-wrap .picNtext {float:left;height:100%;}
+#wrap #main #section7 .wrap .gap .container .content-wrap .pic0 {width:20%;}
+#wrap #main #section7 .wrap .gap .container .content-wrap .pic1 {width:35%;padding-top:5.5%;}
+#wrap #main #section7 .wrap .gap .container .content-wrap .pic2 {width:28%;padding-right:17%;}
+#wrap #main #section7 .wrap .gap .container .content-wrap .picNtext .pic-wrap {width:100%;padding-bottom:7%;}
+#wrap #main #section7 .wrap .gap .container .content-wrap .pic0 .pic-wrap {width:100%;height:38%;}
+#wrap #main #section7 .wrap .gap .container .content-wrap .pic1 .pic-wrap {width:100%;height:63%;}
+#wrap #main #section7 .wrap .gap .container .content-wrap .pic2 .pic-wrap {width:100%;height:53%;}
+
+#wrap #main #section7 .wrap .gap .container .content-wrap .picNtext .pic-wrap .pic-gap {width:100%;height:100%;position:relative;}
+#wrap #main #section7 .wrap .gap .container .content-wrap .picNtext .pic-wrap .pic-gap .front-pic {z-index:2;position:relative;backface-visibility:hidden;transform:perspective(700px) rotateY(0deg);width:95%;margin:0 auto;background:url(../img/grand_canyon/section7_01.jpg) no-repeat 50% 50%;background-size:cover;transition:all 1s ease-in-out;}
+#wrap #main #section7 .wrap .gap .container .content-wrap .picNtext .pic-wrap:hover .pic-gap .front-pic {z-index:1;transform:perspective(700px) rotateY(-180deg);}
+#wrap #main #section7 .wrap .gap .container .content-wrap .pic0 .pic-wrap .pic-gap .front-pic {height:100%;background-image:url(../img/grand_canyon/section7_01.jpg);}
+#wrap #main #section7 .wrap .gap .container .content-wrap .pic1 .pic-wrap .pic-gap .front-pic {height:100%;background-image:url(../img/grand_canyon/section7_02.jpg);}
+#wrap #main #section7 .wrap .gap .container .content-wrap .pic2 .pic-wrap .pic-gap .front-pic {height:100%;background-image:url(../img/grand_canyon/section7_03.jpg);}
+
+#wrap #main #section7 .wrap .gap .container .content-wrap .picNtext .pic-wrap .pic-gap .back-pic {z-index:1;position:absolute;backface-visibility:hidden;transform:perspective(700px) rotateY(180deg);top:0;left:2.5%;width:95%;height:100%;margin:0 auto;display:table;transition:all 1s ease-in-out;}
+#wrap #main #section7 .wrap .gap .container .content-wrap .picNtext .pic-wrap:hover .pic-gap .back-pic {z-index:2;position:absolute;transform:perspective(700px) rotateY(0deg);background:#edd;}
+
+#wrap #main #section7 .wrap .gap .container .content-wrap .picNtext .pic-wrap .pic-gap .back-pic .p-wrap {display:table-cell;width:50%;padding:0 10% 0 40%;}
+#wrap #main #section7 .wrap .gap .container .content-wrap .picNtext .pic-wrap .pic-gap .back-pic .p-wrap p {color:#211;}
+
+#wrap #main #section7 .wrap .gap .container .content-wrap .picNtext .txt-wrap {width:100%;}
+#wrap #main #section7 .wrap .gap .container .content-wrap .picNtext .txt-wrap .txt-gap {width:95%;margin:0 auto;}
+#wrap #main #section7 .wrap .gap .container .content-wrap .picNtext .txt-wrap .txt-gap .up {width:100%;color:#fff;padding-bottom:3%;line-height:120%;font-weight:500;}
+#wrap #main #section7 .wrap .gap .container .content-wrap .picNtext .txt-wrap .txt-gap .down {width:100%;color:#aaa;letter-spacing:-1px;font-size:13px;font-weight:500;}
+
+
+/* SECTION8 */
+#wrap #main #section8 {width:100%;}
+#wrap #main #section8 .wrap {width:100%;max-width:1920px;margin:0 auto;}
+#wrap #main #section8 .wrap .gap {width:100%;}
+#wrap #main #section8 .wrap .gap .container {width:100%;}
+#wrap #main #section8 .wrap .gap .container .content-wrap {width:100%;height:800px;} /* js */
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container {width:100%;height:100%;z-index:1;position:relative;}
+
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .bg-slide-view {width:100%;height:100%;z-index:1;position:relative;}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .bg-slide-view::after {z-index:2;position:absolute;content:"";display:block;top:0;left:0;background:rgba(0,0,0,.1);width:100%;height:100%;}
+
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .bg-slide-view .bg-slide-wrap {width:100%;height:100%;}
+
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .bg-slide-view .bg-slide-wrap .bg-slide {z-index:2;position:absolute;top:0;width:100%;height:100%;background:url(../img/grand_canyon/section8slide4.jpg) no-repeat 50% 50%;background-size:cover;}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .bg-slide-view .bg-slide-wrap .bg-slide0 {z-index:2;left:0;background-image:url(../img/grand_canyon/section8slide0.jpg);}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .bg-slide-view .bg-slide-wrap .bg-slide1 {z-index:3;left:0;background-image:url(../img/grand_canyon/section8slide1.jpg);}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .bg-slide-view .bg-slide-wrap .bg-slide2 {z-index:4;left:0;background-image:url(../img/grand_canyon/section8slide2.jpg);}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .bg-slide-view .bg-slide-wrap .bg-slide3 {z-index:5;left:0;background-image:url(../img/grand_canyon/section8slide3.jpg);}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .bg-slide-view .bg-slide-wrap .bg-slide4 {z-index:6;left:0;background-image:url(../img/grand_canyon/section8slide4.jpg);}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .bg-slide-view .bg-slide-wrap .bg-slide5 {z-index:7;left:0;background-image:url(../img/grand_canyon/section8slide5.jpg);}
+
+
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .title-wrap {z-index:3;position:absolute;top:10%;left:45%;width:60%;color:#fff;}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .title-wrap .title-gap {width:100%;}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .title-wrap .title-gap .title {width:100%;}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .title-wrap .title-gap .title h2 {font-size:45px;font-weight:500;padding-bottom:.1%;letter-spacing:-1px;}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .title-wrap .title-gap .title h2:nth-child(1) {}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .title-wrap .title-gap .title h2:nth-child(2) {}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .title-wrap .title-gap .title h2:nth-child(3) {}
+
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .txt-wrap {z-index:3;position:absolute;top:70%;right:10%;width:500px;color:#fff;}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .txt-wrap .txt-gap {width:100%;}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .txt-wrap .txt-gap .txt-left {float:left;width:50%;}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .txt-wrap .txt-gap .txt-left .txt0 {width:80%;margin:0 auto;font-size:17px;font-weight:400;padding-bottom:10%;}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .txt-wrap .txt-gap .txt-left .txt1 {width:80%;margin:0 auto;line-height:110%;font-size:14px;}
+
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .txt-wrap .txt-gap .txt-right {float:left;width:50%;}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .txt-wrap .txt-gap .txt-right .form-title {width:100%;font-size:17px;font-weight:500;padding-bottom:10%;}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .txt-wrap .txt-gap .txt-right .form-wrap {width:100%;}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .txt-wrap .txt-gap .txt-right .form-wrap form {width:120%;}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .txt-wrap .txt-gap .txt-right .form-wrap form input[type="text"] {float:left;width:57%;height:35px;padding:5px 5px 5px 15px;border-radius:32.5px;margin-bottom:7%;border:none;}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .txt-wrap .txt-gap .txt-right .form-wrap form .button-wrap {width:100%;}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .txt-wrap .txt-gap .txt-right .form-wrap form .button-wrap button {float:left;width:30%;height:45px;border-radius:32.5px;outline:0;border:none;margin-left:5%;background:#aaa;color:#fff;transition:all .2s ease-in-out;}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .txt-wrap .txt-gap .txt-right .form-wrap form .button-wrap button:hover {background:#444;color:#eee;}
+
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .cube-wrap {z-index:2;position:absolute;top:34%;left:15%;width:400px;height:400px;color:#fff;} 
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .cube-wrap .cube {position:relative;width:100%;height:100%;transform-style: preserve-3d;transform:perspective(800px) rotate3d(1,0,0.3, 90deg);animation:cube 36s infinite ease-in-out;}
+@keyframes cube {
+  0% {transform:perspective(800px) rotate3d(1,0,.3, 90deg);}
+  5% {transform:perspective(800px) rotate3d(0,1,.3, 0deg);}
+  16.66666% {transform:perspective(800px) rotate3d(0,1,.3, 0deg);}
+  21.66666% {transform:perspective(800px) rotate3d(0,1,.1, -180deg);}
+  33.33333% {transform:perspective(800px) rotate3d(0,1,.1, -180deg);}
+  38.33333% {transform:perspective(800px) rotate3d(0,1,.3, 90deg);}
+  50% {transform:perspective(800px) rotate3d(0,1,.3, 90deg);}
+  55% {transform:perspective(800px) rotate3d(0,1,.3, -90deg);}
+  66.66666% {transform:perspective(800px) rotate3d(0,1,.3, -90deg);}
+  71.66666% {transform:perspective(800px) rotate3d(1,0,.3, -90deg);}
+  83.33333% {transform:perspective(800px) rotate3d(1,0,.3, -90deg);}
+  88.33333% {transform:perspective(800px) rotate3d(1,0,.3, 90deg);}
+  100% {transform:perspective(800px) rotate3d(1,0,.3, 90deg);}
+}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .cube-wrap .cube .face    {position:absolute;width:100%;height:100%;transform:rotateY(0) translateZ(175px);background:url(../img/grand_canyon/section8slide0.jpg) no-repeat 50% 50%;background-size:200%;opacity:.8;}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .cube-wrap .cube .front   {transform:rotateY(0deg)   translateZ(200px);background-image:url(../img/grand_canyon/section8slide0.jpg);}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .cube-wrap .cube .back    {transform:rotateY(-180deg) translateZ(200px);background-image:url(../img/grand_canyon/section8slide1.jpg);}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .cube-wrap .cube .right   {transform:rotateY(-90deg)  translateZ(200px);background-image:url(../img/grand_canyon/section8slide2.jpg);}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .cube-wrap .cube .left    {transform:rotateY(90deg)  translateZ(200px);background-image:url(../img/grand_canyon/section8slide3.jpg);}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .cube-wrap .cube .top     {transform:rotateX(90deg)   translateZ(200px);background-image:url(../img/grand_canyon/section8slide4.jpg);}
+#wrap #main #section8 .wrap .gap .container .content-wrap .bg-slide-container .cube-wrap .cube .bottom  {transform:rotateX(-90deg)  translateZ(200px);background-image:url(../img/grand_canyon/section8slide5.jpg);}
+
+
+/* FOOTER */
+
+#wrap #footer {z-index:1;position:relative;width:100%;}
+#wrap #footer .wrap {width:100%;max-width:1920px;padding:130px 0;margin:0 auto;color:#fff;background:rgba(20,10,5, 1);}
+#wrap #footer .wrap .gap {width:100%;}
+#wrap #footer .wrap .gap .container {width:100%;}
+#wrap #footer .wrap .gap .container .left {float:left;width:60%;}
+#wrap #footer .wrap .gap .container .left .left-gap {width:80%;margin:0 auto;}
+#wrap #footer .wrap .gap .container .left .left-gap h3 {width:100%;}
+
+#wrap #footer .wrap .gap .container .center {float:left;width:20%;}
+#wrap #footer .wrap .gap .container .center .center-gap {width:80%;margin:0 auto;}
+#wrap #footer .wrap .gap .container .center .center-gap > .title {width:100%;padding-bottom:3%;}
+#wrap #footer .wrap .gap .container .center .center-gap .menu-list {width:100%;}
+#wrap #footer .wrap .gap .container .center .center-gap .menu-list > ul {width:100%}
+#wrap #footer .wrap .gap .container .center .center-gap .menu-list > ul > li {width:100%;}
+#wrap #footer .wrap .gap .container .center .center-gap .menu-list > ul > li > span {display:block;width:100%;}
+#wrap #footer .wrap .gap .container .center .center-gap .menu-list > ul > li > span > a {font-size:14px;display:inline-block;text-decoration:underline;width:100%;color:#fff;transition:all .3s ease-in-out;}
+#wrap #footer .wrap .gap .container .center .center-gap .menu-list > ul > li > span > a:hover {color:#999;}
+
+#wrap #footer .wrap .gap .container .right {float:left;width:20%;}
+#wrap #footer .wrap .gap .container .right .right-gap {width:80%;margin:0 auto;}
+#wrap #footer .wrap .gap .container .right .right-gap > .title {width:100%;padding-bottom:3%;}
+#wrap #footer .wrap .gap .container .right .right-gap .sns-list {width:100%;}
+#wrap #footer .wrap .gap .container .right .right-gap .sns-list > ul {width:100%;}
+#wrap #footer .wrap .gap .container .right .right-gap .sns-list > ul > li {width:100%;}
+#wrap #footer .wrap .gap .container .right .right-gap .sns-list > ul > li > span {display:block;width:100%;}
+#wrap #footer .wrap .gap .container .right .right-gap .sns-list > ul > li > span > a {font-size:14px;display:inline-block;text-decoration:underline;width:100%;color:#fff;transition:all .3s ease-in-out;}
+#wrap #footer .wrap .gap .container .right .right-gap .sns-list > ul > li > span > a:hover {color:#999;}
+
+
+

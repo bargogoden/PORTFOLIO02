@@ -1,0 +1,44 @@
+HEADER
+-로고가 section1위에 있다가 
+스크롤이벤트 발생시, widow의 scrollTop>100시, 
+로고 스케일감소하며 (이때 trasnform-origin사용)
+opacity0으로 사라짐
+그리고 원래 로고자리(fixed header)에 고정된값이 display:block; 
+
+
+SECTION1 작은 슬라이드 
+: 안되면 마스크 슬라이드로
+
+
+
+SECTION2 
+- 내려올때마다 뒷배경이 따라올라온다. :
+뒷배경을 앱솔루트로 해놓고, 스코롤이벤트마다 css의 bottom값 변경.
+
+- 위에 텍스트 엡솔루트는
+$(window).scrollTop>= $('section2').offset().top-500 일시, 
+애드클래스(opacity로 서서히 등장하는 애니메이션이 담긴 애드클래스)를 실행.
+
+$(window).scrollTop== $('#section2').offset().top+ 
+
+
+SECTION3
+:액티브 갤러리 /메뉴버튼: ALL / ACTIVITY/ SUNSET/ VIEW
+
+: 사진 호버시, transform:scale(1.1); opacity:.8; p(문구)밑에서 등장.
+: 사진 클릭시, 모달창으로 확대사진
+: 1069PX에서 2줄, 
+
+
+
+SECTION4
+:배경사진:absulute로 해두고, 
+스크롤이벤트 탑스크롤 10변경마다 bottom값 변경 애니메이션 
+
+
+
+MENU-MODAL
+:#wrap의 스크롤을 없애고 modal상태일때는 modal스크롤만 있게 한다. 
+(litho 모달메뉴창 참고)
+
+:

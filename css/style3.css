@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* MENU-MODAL */
+#m-modal {display:block;z-index:2;width:100%;max-width:1920px;margin:0 auto;position:relative;top:0;left:0;background:#edd;}
+#m-modal .m-modal-gap {margin:0;padding:60px 0;}
+#m-modal .m-modal-gap .m-modal-header {width:100%;}
+#m-modal .m-modal-gap .m-modal-header .logo {float:left;width:10%;}
+#m-modal .m-modal-gap .m-modal-header .logo .logo-gap {width:100%;}
+#m-modal .m-modal-gap .m-modal-header .logo .logo-gap .logo-content {width:100%;}
+#m-modal .m-modal-gap .m-modal-header .logo .logo-gap .logo-content img {width:90%;margin:-30% 0 0 20%;}
+
+#m-modal .m-modal-gap .m-modal-header .nav {float:left;width:80%;padding-bottom:2%;}
+#m-modal .m-modal-gap .m-modal-header .nav .menu {width:40%;margin:0 23% 0 37%;}
+#m-modal .m-modal-gap .m-modal-header .nav .menu > ul {display:inline-block;margin:0 auto;}  
+#m-modal .m-modal-gap .m-modal-header .nav .menu > ul > li {display:inline-block;margin:0 15px ;}  
+#m-modal .m-modal-gap .m-modal-header .nav .menu > ul > li > a {display:inline-block;font-weight:800;}
+
+
+/* SECTION5 */
+
+#m-modal .m-modal-gap .m-modal-content #section5 {width:100%;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap {z-index:1;position:relative;width:100%;max-width:1920px;margin:0 auto;background:rgba(30,10,3,.1);padding-bottom:1%;transition:all .6s ease-in-out;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap.addPic1 {background:rgba(50,160,230,0.19);transition:all .6s ease-in-out;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap.addPic2 {background:rgba(220,150,100,.4);transition:all .6s ease-in-out;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap.addPic3 {background:linear-gradient(to bottom, rgba(200,50,50,.3), rgba(200,100,50, .3), rgba(200,200,50, .3), rgba(100,200,50, .3), rgba(70,120,240, .3), rgba(200,50,240,.3));transition:all .6s ease-in-out;}
+/* #m-modal .m-modal-gap .m-modal-content #section5 .wrap::after {content:"";display:block;z-index:2;position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);} */
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap {z-index:3;position:relative;padding:7% 0;margin:0 7%;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container {width:100%;height:900px;} /* js */
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content {width:100%;height:66.66666%;padding-bottom:10%;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .left-wrap {float:left;width:40%;height:100%;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .left-wrap > ul {width:100%;height:100%;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .left-wrap > ul  .content-wrap {float:left;width:50%;height:100%;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .left-wrap > ul  .content-wrap .content-gap {width:95%;margin:0 auto;height:30%;overflow:hidden;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .left-wrap > ul  .content-wrap .content-gap .content {width:100%;height:100%;background:url(../img/grand_canyon/pic01.jpg) no-repeat 50% 50%;background-size:cover;transform:scale(1);opacity:1;transition:all .6s ease-in-out;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .left-wrap > ul  .content-wrap .content-gap .content:hover {transform:scale(1.1);opacity:.8;}
+
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .left-wrap > ul  .content-wrap .content-gap .content0 {background-image:url(../img/grand_canyon/pic01.jpg);}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .left-wrap > ul  .content-wrap .content-gap .content1 {background-image:url(../img/grand_canyon/pic02.jpg);}
+
+
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .left-wrap > ul  .content-wrap .txt-wrap {width:100%;padding-top:5%;margin-left:5px;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .left-wrap > ul  .content-wrap .txt-wrap .txt-gap {width:100%;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .left-wrap > ul  .content-wrap .txt-wrap .txt-gap h3 {line-height:180%;color:#fff;font-size:14px;font-weight:300;}
+
+
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .right-wrap {float:left;width:60%;height:100%;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .right-wrap .right-gap {width:90%;margin:0 0 0 10%;height:90%;position:relative;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section {z-index:1;position:relative;width:100%;height:100%;}
+
+
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .slide-container {float:right;width:100%;height:100%;overflow:hidden;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .slide-container .slide-view {width:100%;height:100%;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .slide-container .slide-view .slide-wrap {width:100%;height:100%;overflow:hidden}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-container .slide-view .slide-wrap .slide {opacity:1;transition:all .6s ease-in-out;transform:scale(1);float:left;width:100%;height:100%;background:url(../img/grand_canyon/last-pic.jpg) no-repeat 50% 50%;background-size:cover;}/* js */
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-container .slide-view .slide-wrap .slide:hover {transform:scale(1.1);opacity:.8;}
+/* #m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .slide-container .slide-view .slide-wrap .slide0 {background-image:url(../img/grand_canyon/center_edited_01.jpg);}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .slide-container .slide-view .slide-wrap .slide1 {background-image:url(../img/grand_canyon/center_edited_02.jpg);}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .right-wrap .right-gap .slide-section .slide-container .slide-view .slide-wrap .slide2 {background-image:url(../img/grand_canyon/center_edited_03.jpg);} */
+
+
+
+
+
+
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .right-wrap .right-gap .text-wrap {z-index:2;position:absolute;width:90%;top:98%;left:10%;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .right-wrap .right-gap .text-wrap .left-h3 {float:left;height:100%;width:20%;padding-top:5%;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .right-wrap .right-gap .text-wrap .left-h3  h3 {font-size:14px;color:#fff;font-weight:300;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .right-wrap .right-gap .text-wrap .right-text {float:right;width:37%;height:100%;margin-right:14%;padding-top:5%;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .right-wrap .right-gap .text-wrap .right-text .up {width:100%;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .right-wrap .right-gap .text-wrap .right-text .up p {width:100%;color:#fff;font-weight:300;line-height:135%;font-size:14px;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .right-wrap .right-gap .text-wrap .right-text .down {width:100%;padding-top:20px;}
+#m-modal .m-modal-gap .m-modal-content #section5 .wrap .gap .container .content .right-wrap .right-gap .text-wrap .right-text .down h4 {color:#fff;font-weight:300;}
+
+
+#m-modal .m-modal-gap .m-modal-footer {width:100%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap {width:100%;max-width:1920px;padding:130px 0;margin:0 auto;color:#fff;background:rgba(20,10,5, 1);}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap {width:100%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container {width:100%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .left {float:left;width:60%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .left .left-gap {width:80%;margin:0 auto;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .left .left-gap h3 {width:100%;padding-bottom:3%;}
+
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .center {float:left;width:20%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .center .center-gap {width:80%;margin:0 auto;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .center .center-gap > .title {width:100%;padding-bottom:3%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .center .center-gap .menu-list {width:100%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .center .center-gap .menu-list > ul {width:100%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .center .center-gap .menu-list > ul > li {width:100%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .center .center-gap .menu-list > ul > li > span {display:block;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .center .center-gap .menu-list > ul > li > span > a {display:inline-block;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .center .center-gap .menu-list > ul > li > span > a:hover {color:#999;}
+
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .right {float:left;width:20%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .right .right-gap {width:80%;margin:0 auto;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .right .right-gap > .title {width:100%;padding-bottom:3%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .right .right-gap .sns-list {width:100%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .right .right-gap .sns-list > ul {width:100%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .right .right-gap .sns-list > ul > li {width:100%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .right .right-gap .sns-list > ul > li > span {display:block;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .right .right-gap .sns-list > ul > li > span > a {display:inline-block;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .right .right-gap .sns-list > ul > li > span > a:hover {color:#999;}

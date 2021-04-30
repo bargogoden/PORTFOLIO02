@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* MENU-MODAL */
+#m-modal {display:block;z-index:2;width:100%;max-width:1920px;margin:0 auto;position:relative;top:0;left:0;background:#edd;}
+#m-modal .m-modal-gap {margin:0;padding:60px 0;}
+#m-modal .m-modal-gap .m-modal-header {width:100%;}
+#m-modal .m-modal-gap .m-modal-header .logo {float:left;width:10%;}
+#m-modal .m-modal-gap .m-modal-header .logo .logo-gap {width:100%;}
+#m-modal .m-modal-gap .m-modal-header .logo .logo-gap .logo-content {width:100%;}
+#m-modal .m-modal-gap .m-modal-header .logo .logo-gap .logo-content img {width:90%;margin:-20% 0 0 20%;}
+
+#m-modal .m-modal-gap .m-modal-header .nav {float:left;width:80%;}
+#m-modal .m-modal-gap .m-modal-header .nav .menu {width:40%;margin:0 23% 0 37%;}
+#m-modal .m-modal-gap .m-modal-header .nav .menu > ul {display:inline-block;margin:0 auto;}  
+#m-modal .m-modal-gap .m-modal-header .nav .menu > ul > li {display:inline-block;margin:0 15px ;}  
+#m-modal .m-modal-gap .m-modal-header .nav .menu > ul > li > a {display:inline-block;font-weight:800;}
+
+#m-modal .m-modal-gap .m-modal-content {width:80%;margin:0 auto;padding:50px 0 100px 0; }
+#m-modal .m-modal-gap .m-modal-content .divide {width:100%;padding:50px 0;}
+#m-modal .m-modal-gap .m-modal-content .divide > ul {width:100%;text-align:right;}
+#m-modal .m-modal-gap .m-modal-content .divide > ul > li {display:inline-block;margin:0 15px;}
+#m-modal .m-modal-gap .m-modal-content .divide > ul > li > span {display:inline-block;}
+#m-modal .m-modal-gap .m-modal-content .divide > ul > li > span > a {display:inline-block;font-size:17px;font-weight:500;color:#999;}
+#m-modal .m-modal-gap .m-modal-content .divide > ul > li:first-child > span > a {color:#444;}
+#m-modal .m-modal-gap .m-modal-content .divide > ul > li > span:hover > a {color:#444;}
+
+#m-modal .m-modal-gap .m-modal-content .list {width:100%;}
+#m-modal .m-modal-gap .m-modal-content .list > li {width:100%;height:72px;}
+#m-modal .m-modal-gap .m-modal-content .list > li > span {display:block;height:100%;padding:5px 0;}
+#m-modal .m-modal-gap .m-modal-content .list > li > span > a {display:block;font-size:55px;transition:all .3s ease-in-out;border:1px solid transparent;border-radius:40px;}
+#m-modal .m-modal-gap .m-modal-content .list > li > span:hover > a {margin:0 30px;padding:5px;border:1px solid #434343;border-radius:40px;}
+
+#m-modal .m-modal-gap .m-modal-footer {width:100%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap {width:100%;max-width:1920px;padding:130px 0;margin:0 auto;color:#fff;background:rgba(20,10,5, 1);}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap {width:100%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container {width:100%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .left {float:left;width:60%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .left .left-gap {width:80%;margin:0 auto;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .left .left-gap h3 {width:100%;padding-bottom:3%;}
+
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .center {float:left;width:20%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .center .center-gap {width:80%;margin:0 auto;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .center .center-gap > .title {width:100%;padding-bottom:3%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .center .center-gap .menu-list {width:100%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .center .center-gap .menu-list > ul {width:100%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .center .center-gap .menu-list > ul > li {width:100%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .center .center-gap .menu-list > ul > li > span {display:block;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .center .center-gap .menu-list > ul > li > span > a {display:inline-block;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .center .center-gap .menu-list > ul > li > span > a:hover {color:#999;}
+
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .right {float:left;width:20%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .right .right-gap {width:80%;margin:0 auto;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .right .right-gap > .title {width:100%;padding-bottom:3%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .right .right-gap .sns-list {width:100%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .right .right-gap .sns-list > ul {width:100%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .right .right-gap .sns-list > ul > li {width:100%;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .right .right-gap .sns-list > ul > li > span {display:block;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .right .right-gap .sns-list > ul > li > span > a {display:inline-block;}
+#m-modal .m-modal-gap .m-modal-footer .wrap .gap .container .right .right-gap .sns-list > ul > li > span > a:hover {color:#999;}
